@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 
 const app = express()
 
-
+// connect to mongodb
 mongoose.connect('mongodb://localhost:27017/graphql', { useNewUrlParser: true });
 mongoose.connection.once('open', () => {
     console.log('connected to database')
@@ -13,7 +13,7 @@ mongoose.connection.once('open', () => {
 
 app.use('/graphql', graphqlHttp({
     schema,
-    graphiql: true
+    graphiql: true // enable GraphQL client interface
 }))
 
 app.listen(4000, () => {
