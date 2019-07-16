@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const app = express()
 
 // connect to mongodb
-mongoose.connect('mongodb://localhost:27017/graphql', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://graphql:0000@cluster0-crhdb.mongodb.net/graphql?retryWrites=true&w=majority', { useNewUrlParser: true });
 mongoose.connection.once('open', () => {
     console.log('connected to database')
 })
