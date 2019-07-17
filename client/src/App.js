@@ -1,18 +1,13 @@
 import React from 'react';
 
+// components
+import BookList from './components/BookList'
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <h1>List of books</h1>
+      <BookList/>
     </div>
   );
 }
