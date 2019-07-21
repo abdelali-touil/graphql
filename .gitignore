@@ -1,3 +1,4 @@
 # Don't track content of these folders
 .vscode/
 .project/
+node_modules/
