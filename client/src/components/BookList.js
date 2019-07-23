@@ -33,7 +33,8 @@ class BookList extends Component {
     render() {
         return (
             <div>
-                <table id="book-list" className="table table-hover">
+                <h3 className="mt-4">List of books</h3>
+                <table id="book-list" className="table">
                     <thead>
                         <tr>
                             <th>Name</th>
